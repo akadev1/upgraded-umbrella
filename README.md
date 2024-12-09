@@ -120,3 +120,87 @@ To make the most out of Gradle, take advantage of these additional resources:
         <img src="https://img.shields.io/badge/-4A154B?style=for-the-badge&logo=slack&logoColor=white" alt="Slack" style="margin: 0 20px;">
     </a>
 </div>
+
+---
+
+### 📜 **Overview**
+
+Gradle is a powerful build automation tool that supports a wide range of languages and platforms. It is designed to be highly customizable and extensible, making it suitable for projects of all sizes and complexities.
+
+**Key Features:**
+- **Multi-language support**: Java, Kotlin, Scala, Android, Groovy, C++, Swift, and more.
+- **Performance-oriented**: Incremental builds, build caching, and parallel execution.
+- **Extensible**: Custom plugins and build logic.
+- **IDE integration**: Works seamlessly with popular IDEs like IntelliJ IDEA, Eclipse, and Android Studio.
+- **CI/CD integration**: Compatible with Jenkins, GitHub Actions, GitLab CI, CircleCI, and more.
+
+---
+
+### 🛠 **Installation Instructions**
+
+To install Gradle, follow these steps:
+
+1. **Download**: Visit the [Gradle releases page](https://gradle.org/releases/) and download the latest version.
+2. **Extract**: Unzip the downloaded file to a directory of your choice.
+3. **Set Environment Variables**:
+   - **Windows**:
+     - Open the Start Search, type in "env", and select "Edit the system environment variables".
+     - Click the "Environment Variables" button.
+     - Under "System Variables", click "New" and add `GRADLE_HOME` with the path to your Gradle directory.
+     - Add `%GRADLE_HOME%\bin` to the `Path` variable.
+   - **macOS/Linux**:
+     - Open a terminal and edit your profile file (e.g., `~/.bash_profile`, `~/.zshrc`).
+     - Add the following lines:
+       ```sh
+       export GRADLE_HOME=/path/to/gradle
+       export PATH=$PATH:$GRADLE_HOME/bin
+       ```
+     - Save the file and run `source ~/.bash_profile` or `source ~/.zshrc`.
+
+4. **Verify Installation**: Open a terminal or command prompt and run:
+   ```sh
+   gradle -v
+   ```
+   You should see the Gradle version and environment information.
+
+---
+
+### 📚 **Usage Examples**
+
+Here are some basic usage examples to get you started with Gradle:
+
+1. **Creating a New Project**:
+   ```sh
+   gradle init --type java-application
+   ```
+
+2. **Building a Project**:
+   ```sh
+   gradle build
+   ```
+
+3. **Running Tests**:
+   ```sh
+   gradle test
+   ```
+
+4. **Running the Application**:
+   ```sh
+   gradle run
+   ```
+
+5. **Adding Dependencies**:
+   Add dependencies to your `build.gradle` file:
+   ```groovy
+   dependencies {
+       implementation 'org.springframework.boot:spring-boot-starter-web'
+   }
+   ```
+
+---
+
+### 🤝 **Contribution Guidelines**
+
+We welcome contributions to Gradle! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) file for detailed guidelines on how to contribute to the project.
+
+---
