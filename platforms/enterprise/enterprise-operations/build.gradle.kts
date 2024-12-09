@@ -14,4 +14,5 @@ dependencies {
 }
 tasks.isolatedProjectsIntegTest {
     enabled = false
+    labels.addAll(listOf("@dev-productivity", "a:chore", "in:building-gradle"))
 }
