@@ -293,3 +293,7 @@ The full distribution will be created at `subprojects/distributions-full/build/d
 We deeply appreciate your effort toward improving Gradle. For any contribution, large or small, you will be immortalized in the release notes for the version you've contributed to.
 
 If you enjoyed this process, perhaps you should consider getting [paid to develop Gradle](https://gradle.com/careers)?
+
+## Quick Overview
+
+For a quick overview of the project, please refer to the [README.md](README.md) file.
